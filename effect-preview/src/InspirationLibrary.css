@@ -1,0 +1,67 @@
+.dialog:has(.inspo-library){width:min(1080px,94vw);max-width:1080px;background:#fbf8f3}
+.inspo-intro{font-size:14px;color:#89747b;margin:4px 0 20px;line-height:1.8}
+.inspo-filters{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px}
+.inspo-filters label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:#89747b}
+.inspo-filters input,.inspo-filters select{width:100%;min-width:0;padding:11px;border:1px solid #dfd3cb;border-radius:8px;background:#fffdfa;color:#513e46;font:inherit}
+.inspo-results{display:flex;align-items:center;justify-content:space-between;margin:14px 0;font-size:12px;color:#89747b}
+.inspo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.inspo-card{text-align:left;background:#f2ebe3;border:1px solid #e6dbd1;border-radius:12px;overflow:hidden;transition:border-color .15s}
+.inspo-card:hover{border-color:#a96b7e}.inspo-card:focus-visible{outline:2px solid #8a4e60;outline-offset:3px}
+.inspo-card-nails{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px 3px;padding:18px 14px 10px;background:radial-gradient(ellipse,#fffaf2,#eee4d9);height:176px;pointer-events:none}
+.inspo-card-nails .nail-art{height:64px;width:100%;filter:drop-shadow(2px 4px 3px #69473720)}
+.inspo-card-caption{padding:13px 15px 16px}.inspo-card-caption strong{font-family:'Songti SC',serif;font-size:20px;font-weight:500}.inspo-card-caption span{display:block;font-size:11px;color:#9d7e88;margin-top:6px}.inspo-card-caption p{font-size:12px;line-height:1.7;color:#87777a;margin:10px 0}.inspo-card-caption small{color:#8a4e60;font-size:12px}
+.inspo-empty{text-align:center;padding:50px 15px;color:#89747b}.inspo-empty p{margin:16px 0;font-size:13px}
+.inspo-existing{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e6dbd1;margin-top:25px;padding-top:16px;font-size:12px;color:#89747b}
+.inspo-detail-heading h3{font:28px 'Songti SC',serif;margin:16px 0 8px}.inspo-detail-heading p{color:#89747b;font-size:13px;margin-bottom:16px}
+.inspo-check{display:flex;align-items:center;gap:8px;font-size:13px;margin:16px 0;color:#795e68}.inspo-check input{accent-color:#8a4e60}
+.inspo-preview-title{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin:18px 0 10px}.inspo-preview-title span{font-size:12px;color:#89747b}
+.inspo-preview{background:radial-gradient(ellipse,#fffaf2,#eee4d9);padding:20px;border-radius:12px}
+.inspo-hand{display:grid;grid-template-columns:30px repeat(5,minmax(0,1fr));align-items:center;gap:15px;margin:7px 0}
+.inspo-hand>span{font-size:12px;color:#997a84}.inspo-hand button{display:flex;flex-direction:column;align-items:center;gap:5px;border:1px solid transparent;border-radius:9px;padding:7px 3px;opacity:1}
+.inspo-hand button.retained{border-color:#b19783;background:#e7ded080}.inspo-hand .nail-art{height:120px;max-width:85px;filter:drop-shadow(3px 6px 5px #69473720)}
+.inspo-hand small{font-size:11px;color:#89747b}.inspo-hand em{height:14px;font-size:10px;font-style:normal;color:#8a4e60}
+.inspo-apply-note{font-size:12px;color:#89747b;line-height:1.8;margin:15px 0}.inspo-apply{display:flex;justify-content:flex-end;gap:10px;padding-top:10px}
+.inspo-source{padding:15px 0 0}.inspo-source p{font-size:13px;color:#89747b}.inspo-source>div{display:flex;gap:10px;margin:12px 0}.inspo-source button{border:1px solid #e6dbd1;border-radius:8px;padding:8px;width:76px}.inspo-source button.active{border-color:#8a4e60;background:#eee0db}.inspo-source .nail-art{height:64px}.inspo-source small{font-size:11px}
+@media(max-width:760px){.dialog:has(.inspo-library){width:96vw;padding:18px;max-height:94dvh}.inspo-filters{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.inspo-search{grid-column:1/-1}.inspo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.inspo-card-nails{padding:10px 5px;height:134px;gap:6px 0}.inspo-card-nails .nail-art{height:50px}.inspo-card-caption{padding:10px}.inspo-card-caption strong{font-size:17px}.inspo-card-caption p{font-size:11px}.inspo-existing{flex-direction:column;align-items:flex-start}.inspo-preview{padding:8px}.inspo-hand{grid-template-columns:20px repeat(5,minmax(0,1fr));gap:2px}.inspo-hand .nail-art{height:75px}.inspo-preview-title{flex-direction:column}.inspo-apply{flex-direction:column-reverse}.inspo-apply button{width:100%}.inspo-hand small{font-size:10px}}
+.inspo-source>div{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));max-width:480px}.inspo-source button{width:auto}.inspo-source small{font-size:10px}
+.dialog.wide:has(.inspo-library){width:min(1080px,94vw);max-width:1080px}
+.dialog:has(.inspo-library)>header{position:sticky;top:-28px;background:#fbf8f3;z-index:2;padding:12px 0}
+.inspo-apply{position:sticky;bottom:-28px;background:#fbf8f3;padding:14px 0;z-index:1;border-top:1px solid #e6dbd1}
+@media(max-width:760px){.dialog.wide:has(.inspo-library){width:96vw}.dialog:has(.inspo-library)>header{top:-18px}.inspo-apply{bottom:-18px}}
+.inspiration-entry{margin-bottom:15px}.random-preferences{display:grid;grid-template-columns:1fr 1fr;gap:15px}.random-preferences label{display:flex;flex-direction:column;gap:8px;color:#89747b;font-size:12px}.random-preferences select{padding:11px;border:1px solid #dfd3cb;border-radius:8px;background:#fffdfa;color:#513e46}.random-actions{display:flex;gap:12px;margin:18px 0 10px}.random-help,.random-retained{font-size:12px;color:#89747b;line-height:1.8}.random-result{display:flex;align-items:center;flex-wrap:wrap;gap:15px;margin-top:24px;font-size:14px}.random-swatches{display:flex;gap:5px}.random-swatches span{width:19px;height:19px;border-radius:50%;border:1px solid #0001}.random-history{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:12px}.random-history .ghost{font-size:12px;padding:7px 12px;min-height:32px}.random-retained{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}.random-inspiration .inspo-hand .nail-art{height:108px}@media(max-width:760px){.random-actions{flex-direction:column}.random-result{gap:8px}.random-history{width:100%;margin:6px 0}.random-retained{flex-direction:column;align-items:flex-start}.random-inspiration .inspo-hand .nail-art{height:75px}}
+@media(min-width:761px){
+ .random-inspiration{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:10px 22px}
+ .random-inspiration>.inspo-intro{grid-column:1/-1;margin:0 0 6px}
+ .random-preferences{grid-column:2;grid-row:2/4;grid-template-columns:1fr;gap:10px}
+ .random-actions{grid-column:2;grid-row:4;flex-direction:column;margin:0}
+ .random-help{grid-column:2;grid-row:5;margin:0}
+ .random-result{grid-column:1;grid-row:2;margin:0;gap:8px}
+ .random-history{gap:6px}.random-history .ghost{padding:5px 8px}
+ .random-inspiration>.inspo-preview-title{grid-column:1;grid-row:3;margin:4px 0;flex-direction:column}
+ .random-inspiration>.inspo-preview{grid-column:1;grid-row:4/8;padding:10px}
+ .random-retained{grid-column:2;grid-row:6;flex-direction:column;align-items:flex-start;margin:0}
+ .random-inspiration>.inspo-apply-note{grid-column:2;grid-row:7;margin:0}
+ .random-inspiration>.inspo-apply{grid-column:1/-1;grid-row:8;bottom:-28px;padding:10px 0}
+ .random-inspiration .inspo-hand .nail-art{height:90px}
+}
+@media(min-width:761px){
+ .random-preferences{grid-row:2;grid-template-columns:1fr 1fr;gap:8px}.random-preferences select{width:100%;min-width:0;padding:8px 3px}
+ .random-actions{grid-row:3/5;align-self:start}
+ .random-inspiration .inspo-hand{gap:8px;margin:0}.random-inspiration .inspo-hand .nail-art{height:85px}
+ .random-inspiration>.inspo-preview-title{gap:4px;justify-content:flex-start}
+ .dialog:has(.random-inspiration)>header{padding:4px 0;margin-bottom:12px}
+ .dialog:has(.random-inspiration)>header .eyebrow{display:none}
+}
+@media(min-width:761px){
+ .random-inspiration{display:block;position:relative;padding-right:282px;min-height:450px}
+ .random-inspiration>.inspo-intro{margin:0 0 12px}
+ .random-preferences{position:absolute;right:0;top:0;width:260px}
+ .random-actions{position:absolute;right:0;top:150px;width:260px}
+ .random-help{position:absolute;right:0;top:260px;width:260px}
+ .random-retained{position:absolute;right:0;top:332px;width:260px}
+ .random-inspiration>.inspo-apply-note{position:absolute;right:0;top:392px;width:260px}
+ .random-result{min-height:48px;align-content:center}
+ .random-inspiration>.inspo-preview-title{margin:12px 0 8px}
+ .random-inspiration>.inspo-preview{padding:8px}
+ .random-inspiration>.inspo-apply{position:static;padding:10px 0;margin-top:8px}
+}

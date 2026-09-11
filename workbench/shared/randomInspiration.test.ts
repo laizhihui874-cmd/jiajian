@@ -1,0 +1,9 @@
+import {describe,it,expect} from 'vitest'
+import {newDesign,designSchema} from './design.js'
+import {generateInspiration} from './randomInspiration.js'
+describe('规则随机灵感',()=>{
+ it('200套结果均可保存，统一配色且重点甲不超过两枚',()=>{const d=newDesign();const signatures=new Set();for(let seed=1;seed<=200;seed++){const g=generateInspiration(d,{seed});expect(designSchema.safeParse(g.design).success).toBe(true);expect(new Set(g.design.nails.map(n=>n.color)).size).toBe(3);expect(g.design.nails.filter(n=>n.pattern!=='none'||n.decorations.length).length).toBeLessThanOrEqual(2);expect(g.design.nails.filter(n=>n.color===g.colors[0])).toHaveLength(6);signatures.add(JSON.stringify(g.design.nails))}expect(signatures.size).toBe(200)})
+ it('同感觉保留配色风格光感，新方向遵守偏好',()=>{const d=newDesign(),a=generateInspiration(d,{seed:10,mood:'温柔',family:'粉裸'}),b=generateInspiration(d,{seed:20,previous:a,variation:'similar'}),c=generateInspiration(d,{seed:30,previous:a,variation:'different',mood:'甜酷',family:'蓝色'});expect(b.colors).toEqual(a.colors);expect(b.finish).toBe(a.finish);expect(b.mood).toBe(a.mood);expect(b.design.nails).not.toEqual(a.design.nails);expect(c.family).toBe('蓝色');expect(c.mood).toBe('甜酷')})
+ it('保留生成预览中的甲片而不是回到原设计，并保护原作锁定内容',()=>{const d=newDesign();d.nails[2].lockedLayers=['base'];const a=generateInspiration(d,{seed:7}),b=generateInspiration(d,{seed:9,previous:a,keep:[0]});expect(b.design.nails[0]).toEqual(a.design.nails[0]);expect(b.design.nails[0]).not.toEqual(d.nails[0]);expect(b.design.nails[2]).toEqual(d.nails[2])})
+ it('保留甲型长度、身份且不修改输入，随机可复现',()=>{const d=newDesign();d.nails[1].shape='square';d.nails[1].length='short';const before=structuredClone(d);const a=generateInspiration(d,{seed:1});expect(a.design.id).toBe(d.id);expect(a.design.nails[1].shape).toBe('square');expect(a.design.nails[1].length).toBe('short');expect(d).toEqual(before);expect(generateInspiration(d,{seed:1})).toEqual(a)})
+})

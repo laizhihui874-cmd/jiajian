@@ -1,0 +1,32 @@
+.organized-workspace .preview-stage.hand{background:radial-gradient(ellipse at 46% 35%,#fffdf9 0%,#f3eae0 65%,#e9ded2 100%);box-shadow:none}
+.organized-workspace .modeled-hand{mix-blend-mode:normal;isolation:isolate;overflow:hidden}
+.organized-workspace .hand-scene{position:absolute;inset:0}
+.organized-workspace .hand-scene>canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab;outline:none}
+.organized-workspace .hand-scene>canvas:active{cursor:grabbing}
+.organized-workspace .hand-scene>canvas:focus-visible{outline:2px solid #b17e8e;outline-offset:-4px;border-radius:10px}
+.organized-workspace .hand-view-controls{position:absolute;top:16px;right:18px;display:flex;gap:6px;z-index:2}
+.organized-workspace .hand-view-controls button{font:inherit;font-size:12px;min-height:38px;padding:8px 14px;border-radius:9px;border:1px solid #e4d7cd;background:#fffcf5df;color:#7f6266;box-shadow:0 2px 8px #63453306}
+.organized-workspace .hand-view-controls button:hover:not(:disabled){background:#fffdfb;border-color:#c6a5aa}
+.organized-workspace .hand-view-controls button:disabled{opacity:.45}
+.organized-workspace .hand-skin-controls{position:absolute;bottom:18px;left:20px;display:flex;align-items:center;gap:6px;padding:5px 9px;border:1px solid #e5d8ce;border-radius:12px;background:#fffcf4eb;z-index:2}
+.organized-workspace .hand-skin-controls>span{font-size:11px;color:#8b7371;margin-right:4px}
+.organized-workspace .hand-skin-controls button{display:grid;place-items:center;width:36px;height:36px;border:1px solid transparent;border-radius:50%;padding:4px;background:transparent}
+.organized-workspace .hand-skin-controls button>span{display:block;width:24px;height:24px;border-radius:50%;box-shadow:inset 0 0 0 1px #77483218}
+.organized-workspace .hand-skin-controls button[aria-pressed=true]{border-color:#9c6575;background:#fffaf5}
+.organized-workspace .hand-preview-status{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:12px;padding:13px 18px;border:1px solid #e3d5c9;border-radius:10px;background:#fffaf2f5;color:#715a58;font-size:12px;white-space:nowrap;z-index:3;box-shadow:0 8px 30px #4e342818}
+.organized-workspace .hand-preview-status button{min-height:36px;padding:6px;color:#884b5d;text-decoration:underline;background:none}
+.organized-workspace .preview-stage.hand .preview-note{background:#f9f4ed;color:#8a736c;padding:10px 12px;font-size:11px}
+.organized-workspace .hand-switch{background:#fffbf4eb;border:1px solid #e7d8ce;box-shadow:0 4px 16px #6644380a;bottom:18px;right:18px;z-index:2}
+.organized-workspace .hand-switch button{min-height:36px;padding:7px 15px}
+@media(max-width:760px){
+ .organized-workspace.preview-hand .preview-panel{height:55%;min-height:310px}
+ .organized-workspace.preview-hand.tools-collapsed .preview-panel{height:auto;min-height:0}
+ .organized-workspace .hand-switch{right:8px;bottom:8px}
+ .organized-workspace .hand-switch button{min-height:34px;padding:6px 11px}
+ .organized-workspace .hand-view-controls{top:8px;right:8px;gap:5px}
+ .organized-workspace .hand-view-controls button{min-height:34px;padding:6px 10px;font-size:10px}
+ .organized-workspace .hand-skin-controls{left:8px;bottom:8px;gap:3px;padding:3px 6px}
+ .organized-workspace .hand-skin-controls button{width:34px;height:34px}
+ .organized-workspace .hand-skin-controls button>span{width:22px;height:22px}
+ .organized-workspace .hand-preview-status{font-size:11px;padding:8px 11px;gap:6px;white-space:normal;max-width:90%;width:max-content}
+}

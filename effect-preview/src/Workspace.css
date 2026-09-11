@@ -1,0 +1,183 @@
+/* Task-oriented workspace; loaded after the existing nail and gesture artwork styles. */
+.organized-workspace .project-name{border:0;background:none;text-align:left;min-width:0;cursor:pointer}
+.organized-workspace .project-name strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:230px}
+.organized-workspace .top-actions{gap:8px}
+.organized-workspace .workspace{min-height:0}
+.organized-workspace .preview-toolbar{justify-content:space-between}
+.organized-workspace .history{display:flex!important;margin-left:auto;flex-shrink:0}
+.organized-workspace .arrangement-toolbar{justify-content:space-between;height:auto;min-height:40px;gap:12px;flex-wrap:wrap}
+
+.organized-workspace .arrangement-toolbar .text-button{font-size:12px}
+.organized-workspace .preview-stage.is-busy{pointer-events:none;opacity:.7}
+.organized-workspace .scope-affected{outline:2px solid #a46977;outline-offset:3px;border-radius:12px;background:#a469770b}
+.organized-workspace .editing-context{padding:20px 24px 12px;gap:12px;align-items:center}
+.organized-workspace .editing-context h2{font-family:inherit;font-size:19px;margin:0;letter-spacing:0;flex:1;white-space:nowrap}
+.organized-workspace .editing-context .text-button{font-size:12px;white-space:nowrap;padding:7px 0}
+.organized-workspace .scope-row{position:static;padding:0 24px 16px;min-height:43px;font-size:12px;color:#705e62}
+.organized-workspace .scope-targets{display:flex;gap:5px;flex-wrap:wrap;padding:0 24px 14px;font-size:11px}
+.organized-workspace .scope-targets span{border-radius:4px;background:#f0e5e5;padding:3px 6px}
+.organized-workspace .tool-tabs{flex-shrink:0;padding:0 12px}
+.organized-workspace .tool-tabs button{flex:1;min-width:0;font-size:14px;gap:8px;padding:16px 6px}
+.organized-workspace .tool-scroll{padding:22px 24px;min-height:0;overflow:auto;flex:1}
+.organized-workspace .tool-scroll h3{font-family:inherit;font-size:14px;letter-spacing:0;margin:0 0 14px;color:#60484d}
+.organized-workspace .tool-scroll h3:not(:first-child){margin-top:22px}
+.organized-workspace fieldset{min-width:0}
+.organized-workspace .color-section{display:flex;margin-bottom:22px}
+.organized-workspace .color-section button{flex:1;padding:9px}
+.organized-workspace .color-grid{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:15px;column-gap:12px}
+.organized-workspace .color-choice>span{width:38px;height:38px}
+.organized-workspace .color-choice small{font-size:12px;margin-top:5px}
+.organized-workspace .custom-color{margin:22px 0 12px}
+.organized-workspace .fine-options{border-top:1px solid #e9dedb;margin:16px 0;padding:13px 0}
+.organized-workspace summary{cursor:pointer;font-size:12px;color:#6b5259;line-height:1.6}
+.organized-workspace .fine-options>summary{font-weight:500}
+.organized-workspace .fine-options[open]>summary{margin-bottom:15px}
+.organized-workspace .helper{font-size:12px;line-height:1.8;color:#826e73;margin:12px 0}
+.organized-workspace .shape-categories{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.organized-workspace .shape-categories button{display:flex;align-items:center;flex-direction:column;font-size:11px;gap:8px;padding:10px 2px}
+.organized-workspace .shape-categories .nail-art{width:26px;height:46px}
+.organized-workspace .shape-branches{margin:16px 0 24px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.organized-workspace .shape-branches button{padding:12px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.organized-workspace .shape-branches .nail-art{width:45px;height:75px}
+.organized-workspace .shape-branches strong{font-size:12px}
+.organized-workspace .add-gradient{width:100%;margin:12px 0}
+.organized-workspace .material-heading{margin-top:0}
+.organized-workspace .material-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.organized-workspace .material-card-grid .nail-art{height:68px;width:38px}
+.organized-workspace .current-nail{flex:none;border-top:1px solid #e4d8d5;background:#faf7f3;max-height:44%;overflow:auto}
+.organized-workspace .current-nail>summary{padding:16px 24px;font-size:14px;position:sticky;top:0;background:#faf7f3;z-index:2}
+.organized-workspace .current-nail>summary span{font-size:11px;color:#968087;margin-left:8px}
+.organized-workspace .current-nail .design-layers{padding:0 20px 18px}
+.organized-workspace .design-layer{display:block;padding:12px;margin-bottom:8px}
+.organized-workspace .layer-name{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:0;background:none;text-align:left}
+.organized-workspace .layer-name strong{font-size:12px}.organized-workspace .layer-name small{font-size:10px;text-align:right}
+.organized-workspace .content-actions{margin-top:10px}
+.organized-workspace .content-actions summary{font-size:11px}
+.organized-workspace .content-action-buttons{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.organized-workspace .content-action-buttons button{padding:7px 9px;background:#f3ece8;border:1px solid #e4d5d0;border-radius:6px;font-size:11px}
+.organized-workspace .content-actions .danger{color:#9c3746}
+.organized-workspace .lock-notice{display:flex;gap:10px;align-items:center;padding:10px;background:#f1e8e5;border-radius:6px;font-size:12px;margin-bottom:14px}
+.organized-workspace .lock-notice button{margin-left:auto;text-decoration:underline;background:none}
+.organized-workspace .complete-style-note{background:#f3ebe8;border:1px solid #e7d8d2;border-radius:10px;padding:14px;margin-bottom:20px;font-size:12px;line-height:1.8}
+.organized-workspace .complete-style-note .text-button{font-size:12px;margin-right:14px}
+.organized-workspace .nail-more{position:relative;flex:none}
+.organized-workspace .nail-more>div{position:absolute;right:0;top:28px;width:175px;background:#fffaf5;border:1px solid #dfd0cb;box-shadow:0 10px 28px #4a30301f;z-index:12;border-radius:10px;padding:6px}
+.organized-workspace .nail-more button{display:block;text-align:left;background:none;padding:11px 9px;width:100%;font-size:12px}
+.organized-workspace .detail-return{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 15px;min-height:42px;flex-wrap:wrap}
+.organized-workspace .detail-return .text-button{font-size:12px}
+.organized-workspace .workbench-light-controls{margin:0;font-size:11px;flex-wrap:wrap}
+.organized-workspace .comparison-notice{font-size:11px;color:#815662;background:#f3e8e5;padding:8px 14px;display:flex;gap:10px;flex-wrap:wrap}
+.organized-workspace .comparison-notice button{background:none;text-decoration:underline;color:inherit}
+.organized-workspace .workspace-notice{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#f1eee7;border-bottom:1px solid #ded5cb;padding:10px 22px;font-size:12px;flex:none}
+.organized-workspace .workspace-notice.is-error{background:#f9e9e6;color:#8d343d}
+.organized-workspace .workspace-notice button{background:none;color:inherit;font-size:11px;flex-shrink:0}
+.organized-workspace .copy-targets{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}
+.organized-workspace .copy-targets label{display:flex;gap:10px;align-items:center;background:#f3ece6;border-radius:8px;padding:12px;font-size:13px}
+.organized-workspace .name-field{display:flex;flex-direction:column;gap:9px;font-size:12px}
+.organized-workspace .name-field input{font:inherit;font-size:16px;border:1px solid #dacac6;padding:10px;border-radius:6px;background:#fffdf9;width:100%;box-sizing:border-box}
+.organized-workspace .finish-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,1fr);gap:26px}
+.organized-workspace .finish-preview{aspect-ratio:1;background:#f5f0e9;display:flex;align-items:center;justify-content:center;min-width:0;align-self:start;border-radius:10px;overflow:hidden}
+.organized-workspace .finish-preview img{display:block;width:100%;height:auto}
+.organized-workspace .finish-options>button{width:100%;margin-top:10px;justify-content:center}
+.organized-workspace .finish-options h3{font-size:13px;margin-top:20px}
+.organized-workspace .finish-options .price-heading strong{font-size:22px}
+.organized-workspace .style-sections{margin-bottom:18px;display:flex}
+.organized-workspace .style-sections button{flex:1;padding:10px}
+.organized-workspace .inspiration-card>strong{display:block;margin-top:14px;font-size:12px}
+.organized-workspace .atelier-style-grid small{font-size:11px;color:#8c6d75}
+.organized-workspace .saved-set{display:flex;flex-direction:column;gap:2px}
+.organized-workspace .saved-nails{height:80px}
+.organized-workspace .saved-card .ghost{font-size:12px;padding:7px}
+.organized-workspace .mobile-tool-toggle{display:none}
+.organized-workspace .dialog .dialog-actions{flex-wrap:wrap}
+.organized-workspace button:focus-visible,.organized-workspace summary:focus-visible{outline:2px solid #8a495b;outline-offset:3px}
+@media(max-width:1050px) and (min-width:761px){.organized-workspace .save-state{display:none}.organized-workspace .topbar{padding:0 15px}.organized-workspace .top-actions button{padding:8px;font-size:12px}.organized-workspace .editing-context{padding-left:18px;padding-right:18px}.organized-workspace .editing-context h2{font-size:16px}}
+@media(max-width:760px){
+ .organized-workspace.app-shell{min-height:0;height:100dvh}
+ .organized-workspace .topbar{height:auto;min-height:58px;padding:8px 10px;gap:8px;flex-wrap:wrap}
+ .organized-workspace .brand{font-size:17px}.organized-workspace .brand-mark{font-size:23px}.organized-workspace .brand small{display:none}
+ .organized-workspace .project-name{display:none}
+ .organized-workspace .top-actions{gap:4px;flex:1;justify-content:flex-end}
+ .organized-workspace .top-actions button{padding:8px 7px;font-size:11px;min-height:36px;gap:4px}
+ .organized-workspace .top-actions .library-trigger span{display:inline}.organized-workspace .top-actions svg{display:none}
+ .organized-workspace .workspace{min-height:0;overflow:hidden}
+ .organized-workspace .preview-panel{height:43%;min-height:220px;flex:none;padding:6px 0 0}
+ .organized-workspace.preview-single .preview-panel{height:49%;min-height:255px}
+ .organized-workspace .preview-toolbar{padding:0 10px;gap:6px;min-height:35px}
+ .organized-workspace .view-tabs button{font-size:11px;padding:6px 9px}
+ .organized-workspace .history .icon-button{width:31px;height:32px}
+ .organized-workspace .arrangement-toolbar{padding:0 12px;min-height:34px;margin-bottom:2px;gap:5px;flex-wrap:nowrap;font-size:10px}
+ .organized-workspace .arrangement-toolbar .text-button{font-size:10px;padding:3px}
+ .organized-workspace .arrangement-toolbar .segmented button{font-size:10px;padding:5px}
+ .organized-workspace .preview-footer{height:29px;flex:none}.organized-workspace .preview-footer .text-button{font-size:11px}
+ .organized-workspace .tools-panel{min-height:0;flex:1;overflow:visible}
+ .organized-workspace .mobile-tool-toggle{display:block;min-height:29px;width:100%;font-size:10px;color:#816971;background:#f5eee9;border:0;border-bottom:1px solid #e9ded7}
+ .organized-workspace .editing-context{padding:7px 14px;height:auto;min-height:34px;gap:12px;flex:none}
+ .organized-workspace .editing-context h2{font-size:14px}.organized-workspace .editing-context .text-button{font-size:11px;padding:5px}
+ .organized-workspace .scope-row{padding:0 14px 6px;position:static;font-size:11px;min-height:30px;flex:none}
+ .organized-workspace .scope-targets{padding:0 14px 8px;gap:3px;font-size:9px;max-height:46px;overflow:auto;flex:none}
+ .organized-workspace .tool-tabs{height:41px;padding:0 8px;flex:none}.organized-workspace .tool-tabs button{font-size:12px;padding:9px 5px;gap:5px}
+ .organized-workspace .tool-scroll{padding:15px 18px;min-height:0}
+ .organized-workspace .color-grid{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:12px}.organized-workspace .color-choice>span{height:34px;width:34px}
+ .organized-workspace .current-nail{max-height:45%;flex:none}.organized-workspace .current-nail>summary{padding:10px 17px;font-size:12px}.organized-workspace .current-nail>summary span{font-size:10px}
+ .organized-workspace .finish-layout{grid-template-columns:1fr;gap:18px}.organized-workspace .finish-preview{max-width:350px;width:100%;margin:auto}
+ .organized-workspace .dialog{max-height:90dvh;padding:18px}.organized-workspace .finish-options{padding-bottom:10px}
+ .organized-workspace .workspace-notice{padding:8px 12px;font-size:11px;max-height:78px;overflow:auto}
+ .organized-workspace .detail-return{padding:0 11px;min-height:35px;gap:5px}.organized-workspace .workbench-light-controls{font-size:10px;gap:5px}
+ .organized-workspace .comparison-notice{font-size:10px;padding:5px 12px}
+ .organized-workspace .finger-strip{height:45px;min-height:45px;padding:2px 9px}.organized-workspace .finger-strip button{height:38px}
+ .organized-workspace .single-nail{max-height:none}.organized-workspace .single-layout{min-height:0}
+ .organized-workspace.tools-collapsed .preview-panel{height:auto;flex:1;min-height:0}.organized-workspace.tools-collapsed .tools-panel{flex:none}
+ .organized-workspace.tools-collapsed .tools-panel>:not(.mobile-tool-toggle){display:none}
+ .organized-workspace .inspiration-grid,.organized-workspace .gallery-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:390px){.organized-workspace .brand{display:none}.organized-workspace .view-tabs button{padding:6px 7px}.organized-workspace .inspiration-grid,.organized-workspace .gallery-grid{grid-template-columns:1fr}}
+
+.organized-workspace .dialog-error{padding:12px;border-radius:8px;background:#f9e9e6;color:#8d343d;font-size:12px;line-height:1.7}
+
+.organized-workspace .preview-toolbar>.material-lab-trigger{margin-left:auto;flex-shrink:0;padding:7px 13px;font-size:12px}
+.organized-workspace .preview-toolbar:has(>.material-lab-trigger) .history{margin-left:8px}
+@media(max-width:760px){
+ .organized-workspace .preview-toolbar:has(>.material-lab-trigger){flex-wrap:wrap;height:auto;min-height:35px;row-gap:5px}
+ .organized-workspace .preview-toolbar>.material-lab-trigger{font-size:10px;padding:6px 9px}
+ .organized-workspace .preview-toolbar:has(>.material-lab-trigger) .history{margin-left:0}
+ .organized-workspace .preview-toolbar:has(>.material-lab-trigger) .view-tabs{flex:1}
+}
+
+
+/* Visible choices are shared by desktop and touch layouts; no platform dropdowns. */
+.organized-workspace .choice-strip-field{display:flex;align-items:center;gap:12px;min-width:0}
+.organized-workspace .choice-strip-label{flex:none;color:#927e84;font-size:11px;line-height:1.5;white-space:nowrap}
+.organized-workspace .choice-strip{display:flex;align-items:stretch;gap:3px;padding:4px;border-radius:12px;background:#f0e9e5;min-width:0}
+.organized-workspace .choice-strip button{appearance:none;display:flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:8px 12px;border:1px solid transparent;border-radius:9px;background:transparent;color:#917c83;font:inherit;font-size:12px;line-height:1.4;white-space:nowrap;cursor:pointer;transition:background .16s,color .16s,box-shadow .16s}
+.organized-workspace .choice-strip button:hover:not(:disabled):not([aria-pressed=true]){background:#faf5f1;color:#6c4b57}
+.organized-workspace .choice-strip button[aria-pressed=true]{background:#fffdfb;border-color:#e6d6d5;color:#884b5d;font-weight:600;box-shadow:0 2px 7px #67424c0c}
+.organized-workspace .choice-strip-mark{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:0;flex:none;transition:opacity .16s}
+.organized-workspace .choice-strip button[aria-pressed=true] .choice-strip-mark{opacity:1}
+.organized-workspace .choice-strip button:focus-visible{outline:2px solid #b17e8e;outline-offset:2px}
+.organized-workspace .choice-strip button:disabled{opacity:.45;cursor:default}
+.organized-workspace .scope-row{display:block;min-height:0;padding-bottom:18px}
+.organized-workspace .scope-row>span{display:block;line-height:1.7}
+.organized-workspace .scope-choices{display:flex;flex-direction:column;align-items:stretch;gap:8px;width:100%}
+.organized-workspace .scope-choices .choice-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.organized-workspace .scope-choices .choice-strip button{padding:9px 5px}
+.organized-workspace .arrangement-toolbar{gap:12px;flex-wrap:wrap}
+.organized-workspace .arrangement-choices .choice-strip{background:#efe7e180}
+.organized-workspace .arrangement-choices .choice-strip button{min-height:34px;font-size:11px;padding:7px 11px}
+@media(max-width:1050px) and (min-width:761px){
+ .organized-workspace .arrangement-choices{gap:8px}
+ .organized-workspace .arrangement-choices .choice-strip button{padding:7px 8px;font-size:10px}
+}
+@media(max-width:760px){
+ .organized-workspace .scope-row{padding:0 14px 10px}
+ .organized-workspace .scope-choices{gap:5px}
+ .organized-workspace .choice-strip-label{font-size:10px}
+ .organized-workspace .choice-strip button{min-height:40px;font-size:11px}
+ .organized-workspace .scope-choices .choice-strip{padding:3px}
+ .organized-workspace .arrangement-toolbar{flex-wrap:wrap;gap:4px 10px;padding-bottom:4px}
+ .organized-workspace .arrangement-choices{gap:8px;flex:1;min-width:0}
+ .organized-workspace .arrangement-choices .choice-strip{flex:1;padding:3px}
+ .organized-workspace .arrangement-choices .choice-strip button{flex:1;min-height:36px;padding:6px 4px;font-size:10px;gap:4px}
+ .organized-workspace .arrangement-toolbar>.text-button{margin-left:auto}
+}
+@media(prefers-reduced-motion:reduce){.organized-workspace .choice-strip button,.organized-workspace .choice-strip-mark{transition:none}}

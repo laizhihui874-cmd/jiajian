@@ -1,0 +1,19 @@
+name: nail-studio-local
+services:
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - "127.0.0.1:5438:5432"
+    environment:
+      POSTGRES_USER: nail_studio
+      POSTGRES_DB: nail_studio
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Create .env first}
+    volumes:
+      - nail-studio-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nail_studio -d nail_studio"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+volumes:
+  nail-studio-data:
