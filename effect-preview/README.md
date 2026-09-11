@@ -7,11 +7,11 @@ npm ci
 npm run dev:workspace
 ```
 
-打开 http://127.0.0.1:4321/mobile-preview.html 。电脑页面：http://127.0.0.1:4321/ 。
+启动后打开终端显示的访问地址。手机外框预览在该地址的 `/mobile-preview.html` 页面。
 
 需要 Node.js 22.12+，此入口不需要 Docker、数据库、账号或图片生成服务。设计保存在当前浏览器中；清除浏览器数据会丢失保存内容。
 
-不依赖数据库的构建：`npm run build:workspace`。预览构建结果：`npm run preview -- --host 127.0.0.1`，再进入输出地址的 `/mobile-preview.html`。
+不依赖数据库的构建：`npm run build:workspace`。预览构建结果：`npm run preview`，再进入输出地址的 `/mobile-preview.html`。
 
 本目录保留了旧服务文件，但快速体验请使用 `dev:workspace`，不要用需要数据库的 `dev`。
 
